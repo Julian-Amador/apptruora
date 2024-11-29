@@ -8,7 +8,11 @@
     "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
+<<<<<<< HEAD
 },
+=======
+  },
+>>>>>>> f712bc9 (Initial commit)
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.7.1",
     "@fortawesome/free-solid-svg-icons": "^6.7.1",
@@ -37,5 +41,9 @@
     "typescript-eslint": "^8.3.0",
     "vite": "^5.4.11"
   },
+<<<<<<< HEAD
   "homepage": "https://<Julian-Amador>.github.io/<apptruora>"
+=======
+  "homepage": "https://julian-amador.github.io/apptruora"
+>>>>>>> f712bc9 (Initial commit)
 }

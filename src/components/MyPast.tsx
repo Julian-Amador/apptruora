@@ -122,7 +122,7 @@ const MyPast = () => {
       </div>
       <div className="flex justify-center mt-8">
     <a
-        href="/about/mypresent"
+        href="/apptruora/about/mypresent"
         rel="noopener noreferrer"
         className="text-white bg-gradient-to-br from-blue-700 via-indigo-800 to-indigo-900 transition duration-300 ease-in-out text-lg px-6 py-3 rounded-lg shadow-lg"
     >

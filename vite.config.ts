@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/apptruora/',
+  base: 'https://Julian-Amador.github.io/apptruora/',
   optimizeDeps: {
     exclude: ['lucide-react'],
   },

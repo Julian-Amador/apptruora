@@ -114,7 +114,7 @@ const ValueProposal = () => {
       </motion.h2>
       
       <p className="text-lg text-center font-medium text-[#01022E] mb-4 ">
-        Aquí puedes ver mi propuesta para Truora, el roadmap para ejecutarla y las métricas para evaluar eléxito de los experimentos que haremos.
+        Aquí puedes ver mi propuesta para Truora, el roadmap para ejecutarla y las métricas para evaluar el éxito de los experimentos que haremos.
       </p>
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">

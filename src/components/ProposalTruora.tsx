@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import zapsign from '../assets/zapsign.jpg';
+import { Link } from 'react-router-dom';
 
 const ProposalTruora = () => {
   const {} = useParams();
@@ -9,29 +10,29 @@ const ProposalTruora = () => {
       <div>
       <div className="flex justify-between items-start mb-4">
         <div className="flex flex-col items-start space-y-2">
-          <a
-            href="/"
+          <Link
+            to="/"
             rel="noopener noreferrer"
             className="text-white bg-gradient-to-br from-blue-600 via-indigo-700 to-indigo-900 transition duration-300 ease-in-out text-sm px-3 py-1 rounded-lg shadow-md"
           >
             ← Página principal
-          </a>
-          <a
-            href="/about/thefuture"
+          </Link>
+          <Link
+            to="/about/thefuture"
             rel="noopener noreferrer"
             className="text-white bg-gradient-to-br from-blue-600 via-indigo-700 to-indigo-900 transition duration-300 ease-in-out text-sm px-3 py-1 rounded-lg shadow-md"
           >
             ← Como veo el futuro
-          </a>
+          </Link>
         </div>
         <div className="flex flex-col items-start space-y-2">
-          <a
-            href="/value/roadmap"
+          <Link
+            to="/value/roadmap"
             rel="noopener noreferrer"
             className="text-white bg-gradient-to-br from-blue-600 via-indigo-700 to-indigo-900 transition duration-300 ease-in-out text-sm px-3 py-1 rounded-lg shadow-md"
           >
             ¡Mira el roadmap de este proyecto! →
-          </a>
+          </Link>
         </div>
       </div>
     </div>
@@ -120,13 +121,13 @@ const ProposalTruora = () => {
         </p>
     </div>
       <div className="flex justify-center mt-8">
-        <a
-          href="/value/roadmap"
+        <Link
+          to="/value/roadmap"
           rel="noopener noreferrer"
           className="text-white bg-gradient-to-br from-blue-700 via-indigo-800 to-indigo-900 transition duration-300 ease-in-out text-lg px-6 py-3 rounded-lg shadow-lg"
         >
           Leer más sobre el roadmap de estos experimentos →
-        </a>
+        </Link>
       </div>
     </div>
   );

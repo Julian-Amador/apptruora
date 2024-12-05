@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import successonly from '../assets/successonly.jpg'
 import growth from '../assets/growth.jpg'
 import latam from '../assets/latam.png'
+import { Link } from 'react-router-dom';
 
 const TheFuture = () => {
   const {} = useParams();
@@ -10,29 +11,29 @@ const TheFuture = () => {
     <div className="max-w-5xl mx-auto p-6 bg-white rounded-xl shadow-[0_10px_20px_rgba(0.7,0.7,0.7,0.7)]">
       <div className="flex justify-between items-start mb-4">
         <div className="flex flex-col items-start space-y-2">
-          <a
-            href="/"
+          <Link
+            to="/"
             rel="noopener noreferrer"
             className="text-white bg-gradient-to-br from-blue-600 via-indigo-700 to-indigo-900 transition duration-300 ease-in-out text-sm px-3 py-1 rounded-lg shadow-md"
           >
             ← Página principal
-          </a>
-          <a
-            href="/about/mypresent"
+          </Link>
+          <Link
+            to="/about/mypresent"
             rel="noopener noreferrer"
             className="text-white bg-gradient-to-br from-blue-600 via-indigo-700 to-indigo-900 transition duration-300 ease-in-out text-sm px-3 py-1 rounded-lg shadow-md"
           >
             ← Mi realidad actual
-          </a>
+          </Link>
         </div>
         <div>
-          <a
-            href="/value/proposal-truora"
+          <Link
+            to="/value/proposal-truora"
             rel="noopener noreferrer"
             className="text-white bg-gradient-to-br from-blue-600 via-indigo-700 to-indigo-900 transition duration-300 ease-in-out text-sm px-3 py-1 rounded-lg shadow-md"
           >
             Mi Propuesta para Truora →
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -85,13 +86,13 @@ const TheFuture = () => {
 
       {/* Botón al final */}
       <div className="flex justify-center mt-8">
-        <a
-          href="/value/proposal-truora"
+        <Link
+          to="/value/proposal-truora"
           rel="noopener noreferrer"
           className="text-white bg-gradient-to-br from-blue-700 via-indigo-800 to-indigo-900 transition duration-300 ease-in-out text-lg px-6 py-3 rounded-lg shadow-lg"
         >
           Leer mi propuesta para Truora →
-        </a>
+        </Link>
       </div>
     </div>
   );

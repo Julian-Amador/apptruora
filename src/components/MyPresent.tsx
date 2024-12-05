@@ -3,38 +3,37 @@ import danielosopodcast from '../assets/danielosopodcast.jpg'
 import eluniverso from '../assets/eluniversodetruora.svg'
 import bigbang2023 from '../assets/bigbang2023.jpg'
 import theobstacle from '../assets/theobstacleistheway.jpg'
-
+import { Link } from 'react-router-dom';
 
 const MyPresent = () => {
   const {} = useParams();
-
   return (
     <div className="max-w-5xl mx-auto p-6 bg-white rounded-xl shadow-[0_10px_20px_rgba(0.7,0.7,0.7,0.7)]">
       <div className="flex justify-between items-start">
         <div className="flex flex-col items-start space-y-2">
-          <a
-            href="/"
+          <Link 
+            to="/"
             rel="noopener noreferrer"
             className="text-white bg-gradient-to-br from-blue-600 via-indigo-700 to-indigo-900 transition duration-300 ease-in-out text-sm px-3 py-1 rounded-lg shadow-md"
           >
             ← Página principal
-          </a>
-          <a
-            href="/about/mypast"
+          </Link>
+          <Link
+            to="/about/mypast"
             rel="noopener noreferrer"
             className="text-white bg-gradient-to-br from-blue-600 via-indigo-700 to-indigo-900 transition duration-300 ease-in-out text-sm px-3 py-1 rounded-lg shadow-md"
           >
             ← Mi pasado y mi sentido de propósito
-          </a>
+          </Link>
         </div>
         <div>
-          <a
-            href="/about/thefuture"
+          <Link
+            to="/about/thefuture"
             rel="noopener noreferrer"
             className="text-white bg-gradient-to-br from-blue-600 via-indigo-700 to-indigo-900 transition duration-300 ease-in-out text-sm px-3 py-1 rounded-lg shadow-md"
           >
             Como veo el futuro →
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -85,13 +84,13 @@ const MyPresent = () => {
         </p>
       </div>
       <div className="flex justify-center mt-8">
-        <a
-          href="/about/thefuture"
+        <Link
+          to="/about/thefuture"
           rel="noopener noreferrer"
           className="text-white bg-gradient-to-br from-blue-700 via-indigo-800 to-indigo-900 transition duration-300 ease-in-out text-lg px-6 py-3 rounded-lg shadow-lg"
         >
           Leer mas sobre como veo el futuro →
-        </a>
+        </Link>
       </div>
     </div>
   );

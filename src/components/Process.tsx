@@ -8,6 +8,7 @@ import learning from '../assets/learningtruora.png';
 import email from '../assets/emailstruora.jpeg';
 import prompt from '../assets/promptruora.png';
 import iniciando from '../assets/iniciando.jpeg'
+import { Link } from 'react-router-dom';
 
 const Process = () => {
   const { } = useParams();
@@ -16,22 +17,22 @@ const Process = () => {
     <div className="max-w-5xl mx-auto p-6 bg-gray-100 rounded-xl shadow-lg">
       <div className="flex justify-between items-start mb-4">
         <div className="flex flex-col items-start space-y-2">
-          <a
-            href="/value/metrics"
+          <Link
+            to="/value/metrics"
             rel="noopener noreferrer"
             className="text-white bg-gradient-to-br from-blue-600 via-indigo-700 to-indigo-900 transition duration-300 ease-in-out text-sm px-3 py-1 rounded-lg shadow-md"
           >
             ← Métricas de éxito de la propuesta
-          </a>
+          </Link>
         </div>
         <div>
-          <a
-            href="/"
+          <Link
+            to="/"
             rel="noopener noreferrer"
             className="text-white bg-gradient-to-br from-blue-600 via-indigo-700 to-indigo-900 transition duration-300 ease-in-out text-sm px-3 py-1 rounded-lg shadow-md"
           >
             Página principal →
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -131,13 +132,13 @@ const Process = () => {
 
       </div>
       <div className="flex justify-center mt-8">
-        <a
-          href="/"
+        <Link
+          to="/"
           rel="noopener noreferrer"
           className="text-white bg-gradient-to-br from-blue-700 via-indigo-800 to-indigo-900 transition duration-300 ease-in-out text-lg px-6 py-3 rounded-lg shadow-lg"
         >
           ¡Contáctame! Da click a la opción que prefieras en el Header
-        </a>
+        </Link>
       </div>
     </div>
   );

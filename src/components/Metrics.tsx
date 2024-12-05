@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import truorabanner from '../assets/truorabanner.jpg';
+import { Link } from 'react-router-dom';
 
 const Metrics = () => {
     const {} = useParams();
@@ -9,36 +10,36 @@ const Metrics = () => {
         <div>
           <div className="flex justify-between items-start mb-4">
             <div className="flex flex-col items-start space-y-2">
-              <a
-                href="/"
+              <Link
+                to="/"
                 rel="noopener noreferrer"
                 className="text-white bg-gradient-to-br from-blue-600 via-indigo-700 to-indigo-900 transition duration-300 ease-in-out text-sm px-3 py-1 rounded-lg shadow-md"
               >
                 ← Página principal
-              </a>
-              <a
-                href="/value/roadmap"
+              </Link>
+              <Link
+                to="/value/roadmap"
                 rel="noopener noreferrer"
                 className="text-white bg-gradient-to-br from-blue-600 via-indigo-700 to-indigo-900 transition duration-300 ease-in-out text-sm px-3 py-1 rounded-lg shadow-md"
               >
                 ← Roadmap para cada experimento
-              </a>
+              </Link>
             </div>
             <div className="flex flex-col items-finish space-y-2">
-                <a
-                href="/about/mypast"
+              <Link
+                to="/about/mypast"
                 rel="noopener noreferrer"
                 className="text-white bg-gradient-to-br from-blue-600 via-indigo-700 to-indigo-900 transition duration-300 ease-in-out text-sm px-3 py-1 rounded-lg shadow-md"
               >
                 ¡Conoce más sobre quien soy! →
-              </a>
-              <a
-                href="/my-process"
+              </Link>
+              <Link
+                to="/my-process"
                 rel="noopener noreferrer"
                 className="text-white bg-gradient-to-br from-blue-600 via-indigo-700 to-indigo-900 transition duration-300 ease-in-out text-sm px-3 py-1 rounded-lg shadow-md"
               >
                 ¡Mira el proceso de este proyecto! →
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -122,20 +123,20 @@ const Metrics = () => {
             Dicho eso, me encantaría saber qué piensan sobre esto, trabajar en Truora es un reto al que me quiero sumar y esta es mi primera idea de cómo hacerlo. ¿Qué les parece la propuesta? Estoy disponible para conversar cuando deseen :D
         </p>
         <div className="flex justify-center mt-8 space-x-4">
-        <a
-        href="/"
+        <Link
+        to="/"
         rel="noopener noreferrer"
         className="text-white bg-gradient-to-br from-blue-700 via-indigo-800 to-indigo-900 transition duration-300 ease-in-out text-lg px-6 py-3 rounded-lg shadow-lg"
         >
         ¡Contáctame! Da click a la opción que prefieras en el Header
-        </a>
-        <a
-          href="/my-process"
+        </Link>
+        <Link
+          to="/my-process"
           rel="noopener noreferrer"
           className="text-white bg-gradient-to-br from-blue-700 via-indigo-800 to-indigo-900 transition duration-300 ease-in-out text-lg px-6 py-3 rounded-lg shadow-lg"
         >
           Mira el proceso de este proyecto →
-        </a>
+        </Link>
         </div>
       </div>
     </div>

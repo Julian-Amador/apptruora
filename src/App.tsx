@@ -29,6 +29,7 @@ function App() {
               <Route path="/value/proposal-truora" element={<ProposalTruora />} />
               <Route path="/value/roadmap" element={<Roadmap />} />
               <Route path="/value/metrics" element={<Metrics />} />
+              <Route path="*" element={<About />} /> 
             </Routes>
           </div>
         </main>

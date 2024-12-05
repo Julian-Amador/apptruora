@@ -6,7 +6,7 @@ import astros1 from '../assets/astros1.svg';
 import astros2 from '../assets/astros2.svg';
 import me from '../assets/me.jpeg';
 import { useNavigate } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 interface Feature {
   icon: React.ElementType;
   title: string;
@@ -116,14 +116,14 @@ const About: React.FC = () => {
       </div>
 
       <div className="flex justify-center mt-2">
-        <a
-          href="/value/proposal-truora"
+        <Link
+          to="/value/proposal-truora"
           rel="noopener noreferrer"
           className="text-white block text-center justify-center text-2xl bg-gradient-to-br from-blue-600 via-indigo-700 to-indigo-900 transition duration-300 ease-in-out px-5 py-2 rounded-lg shadow-md"
           style={{ width: '400px', height: '55px' }}
         >
           ¡Mira mi propuesta para Truora!
-        </a>
+        </Link>
       </div>
 
       <div className="mt-8">

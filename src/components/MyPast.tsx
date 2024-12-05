@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import momme from '../assets/momme.jpg';
 import meplaying from '../assets/meplaying.jpg';
 import internet from '../assets/internet.jpg';
@@ -11,22 +12,22 @@ const MyPast = () => {
     <div className="max-w-5xl mx-auto p-6 bg-gray-100 rounded-xl shadow-lg">
       <div className="flex justify-between items-start mb-4">
         <div className="flex flex-col items-start space-y-2">
-          <a
-            href="/"
+          <Link
+            to="/"
             rel="noopener noreferrer"
             className="text-white bg-gradient-to-br from-blue-600 via-indigo-700 to-indigo-900 transition duration-300 ease-in-out text-sm px-3 py-1 rounded-lg shadow-md"
           >
             ← Página principal
-          </a>
+          </Link>
         </div>
         <div>
-          <a
-            href="/about/mypresent"
+          <Link
+            to="/about/mypresent"
             rel="noopener noreferrer"
             className="text-white bg-gradient-to-br from-blue-600 via-indigo-700 to-indigo-900 transition duration-300 ease-in-out text-sm px-3 py-1 rounded-lg shadow-md"
           >
             Mi realidad actual →
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -121,14 +122,14 @@ const MyPast = () => {
         </p>
       </div>
       <div className="flex justify-center mt-8">
-    <a
-        href="/apptruora/about/mypresent"
-        rel="noopener noreferrer"
-        className="text-white bg-gradient-to-br from-blue-700 via-indigo-800 to-indigo-900 transition duration-300 ease-in-out text-lg px-6 py-3 rounded-lg shadow-lg"
-    >
-        Leer más sobre mi realidad actual →
-    </a>
-</div>
+    <Link
+        to="/about/mypresent"
+            rel="noopener noreferrer"
+            className="text-white bg-gradient-to-br from-blue-700 via-indigo-800 to-indigo-900 transition duration-300 ease-in-out text-lg px-6 py-3 rounded-lg shadow-lg"
+        >
+            Leer más sobre mi realidad actual →
+        </Link>
+      </div>
     </div>
   );
 };
